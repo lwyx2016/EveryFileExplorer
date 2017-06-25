@@ -216,6 +216,7 @@ namespace NDS.UI
 
 		private void menuReplace_Click(object sender, EventArgs e)
 		{
+			openFileDialog1.FileName = System.IO.Path.GetFileName(fileBrowser1.SelectedPath);
 			if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK
 				   && openFileDialog1.FileName.Length > 0)
 			{
